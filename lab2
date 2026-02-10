@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishil Agarwal - Creative Resume</title>
+    <style>
+        :root {
+            --bg-color: #e8e8e8;
+            --highlight-yellow: #fdf100;
+            --accent-green: #39ff14;
+        }
+
+        body {
+            background-color: #121212;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 50px 0;
+            color: #333;
+        }
+
+        .page {
+            width: 850px;
+            background-color: var(--bg-color);
+            background-image: radial-gradient(#bcbcbc 1px, transparent 1px);
+            background-size: 20px 20px;
+            padding: 40px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+            position: relative;
+        }
+
+        /* Header ID Card */
+        .header-card {
+            display: flex;
+            background: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 5px 5px 0px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 180px;
+            background: #444;
+            margin-right: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .header-text h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        .contact-info {
+            font-size: 0.9rem;
+            margin-top: 10px;
+        }
+
+        /* Section Titles */
+        .section-title {
+            display: inline-block;
+            background: var(--highlight-yellow);
+            padding: 5px 20px;
+            font-size: 1.4rem;
+            border-radius: 50% 10% 40% 5%;
+            transform: rotate(-1deg);
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .container {
+            display: flex;
+            gap: 40px;
+        }
+
+        .left-col { flex: 1.5; }
+        .right-col { flex: 1; }
+
+        /* Project & Education Items */
+        .item {
+            margin-bottom: 25px;
+            border-left: 2px dashed #999;
+            padding-left: 15px;
+        }
+
+        .item h3 { margin: 5px 0; font-size: 1.1rem; }
+        .item p { margin: 2px 0; font-size: 0.95rem; line-height: 1.4; }
+
+        /* Stickers Wall */
+        .sticker-wall {
+            position: relative;
+            height: 200px;
+            margin-bottom: 30px;
+        }
+
+        .sticker {
+            position: absolute;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 0.85rem;
+            text-align: center;
+            box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+        }
+
+        .s-python { background: #f4a261; transform: rotate(8deg); top: 10px; left: 10px; }
+        .s-cpp { background: #e76f51; color: white; transform: rotate(-5deg); top: 50px; left: 100px; }
+        .s-sql { background: #8ecae6; transform: rotate(12deg); top: 20px; right: 20px; }
+        .s-oop { background: #accent-green; transform: rotate(-10deg); top: 90px; right: 50px; }
+
+        /* Skill Bars */
+        .skill-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .bar {
+            width: 100%; height: 8px;
+            background: #ccc;
+            border-radius: 4px;
+            margin-top: 5px;
+        }
+
+        .fill { height: 100%; background: #222; border-radius: 4px; }
+
+    </style>
+</head>
+<body>
+
+    <div class="page">
+        <header class="header-card">
+            <div class="profile-pic">PHOTO</div>
+            <div class="header-text">
+                <h1>RISHIL AGARWAL</h1>
+                <p style="margin: 5px 0; font-style: italic;">Computer Science & Engineering Student</p>
+                <div class="contact-info">
+                    rishilagarwal49@gmail.com | +91 8239949323 <br>
+                    Aburoad, India | Sem 4 CGPA: 8.26/10
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="left-col">
+                <h2 class="section-title">Projects</h2>
+                
+                <div class="item">
+                    <h3>Tic-Tac-Toe with AI</h3>
+                    <p>Implemented Minimax algorithm in C++ for optimal AI decision-making in a console-based environment.</p>
+                </div>
+
+                <div class="item">
+                    <h3>Car Dealership Management</h3>
+                    <p>C++ based system using OOP principles to manage inventory, sales tracking, and customer handling.</p>
+                </div>
+
+                <div class="item">
+                    <h3>Unit Converter CLI</h3>
+                    <p>CLI tool handling 15+ units across length, weight, and temperature with robust input validation.</p>
+                </div>
+
+                <h2 class="section-title">Education</h2>
+                <div class="item">
+                    <h3>MIT World Peace University</h3>
+                    <p>Bachelor of Technology in CSE (2023 – 2027)</p>
+                    <p><strong>CGPA: 8.26/10</strong> (As of Semester 4)</p>
+                </div>
+            </div>
+
+            <div class="right-col">
+                <h2 class="section-title">Core Skills</h2>
+                <div class="sticker-wall">
+                    <div class="sticker s-python">PYTHON</div>
+                    <div class="sticker s-cpp">C++ / C</div>
+                    <div class="sticker s-sql">SQL</div>
+                    <div class="sticker s-oop">OOP / DSA</div>
+                </div>
+
+                <h2 class="section-title">Competencies</h2>
+                <div class="skill-grid">
+                    <div>
+                        <small>DBMS</small>
+                        <div class="bar"><div class="fill" style="width: 85%;"></div></div>
+                    </div>
+                    <div>
+                        <small>Networks</small>
+                        <div class="bar"><div class="fill" style="width: 75%;"></div></div>
+                    </div>
+                    <div>
+                        <small>Team Mgmt</small>
+                        <div class="bar"><div class="fill" style="width: 90%;"></div></div>
+                    </div>
+                    <div>
+                        <small>English</small>
+                        <div class="bar"><div class="fill" style="width: 95%;"></div></div>
+                    </div>
+                </div>
+
+                <h2 class="section-title" style="margin-top: 30px;">Interests</h2>
+                <p style="font-size: 0.9rem;">
+                    • AI/ML Research (NLP, BERT)<br>
+                    • Web Development<br>
+                    • Event Organizing
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
