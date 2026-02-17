@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rishil Agarwal - Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<!-- LOGIN PAGE -->
+<div id="loginPage" class="login-container">
+    <h2>Login to View Portfolio</h2>
+
+    <form onsubmit="return loginValidate()">
+        <input type="text" id="username" placeholder="Enter Username" required>
+        <input type="password" id="password" placeholder="Enter Password" required>
+        <button type="submit">Login</button>
+        <p id="loginError"></p>
+    </form>
+</div>
+
+<!-- PORTFOLIO PAGE -->
+<div id="portfolio" class="page" style="display:none;">
+
+    <header class="header-card">
+        <div class="profile-pic">PHOTO</div>
+        <div class="header-text">
+            <h1>RISHIL AGARWAL</h1>
+            <p class="subtitle">Computer Science & Engineering Student</p>
+            <div class="contact-info">
+                rishilagarwal49@gmail.com | +91 8239949323 <br>
+                Aburoad, India | Sem 4 CGPA: 8.26/10
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="left-col">
+            <h2 class="section-title">Projects</h2>
+
+            <div class="item">
+                <h3>Tic-Tac-Toe with AI</h3>
+                <p>Implemented Minimax algorithm in C++ for optimal AI decision-making.</p>
+            </div>
+
+            <div class="item">
+                <h3>Car Dealership Management</h3>
+                <p>C++ system using OOP principles for inventory and sales tracking.</p>
+            </div>
+
+            <div class="item">
+                <h3>Unit Converter CLI</h3>
+                <p>CLI tool handling 15+ units with robust validation.</p>
+            </div>
+
+            <h2 class="section-title">Education</h2>
+            <div class="item">
+                <h3>MIT World Peace University</h3>
+                <p>B.Tech in CSE (2023 – 2027)</p>
+                <p><strong>CGPA: 8.26/10</strong></p>
+            </div>
+        </div>
+
+        <div class="right-col">
+            <h2 class="section-title">Core Skills</h2>
+
+            <div class="sticker-wall">
+                <div class="sticker s-python">PYTHON</div>
+                <div class="sticker s-cpp">C++ / C</div>
+                <div class="sticker s-sql">SQL</div>
+                <div class="sticker s-oop">OOP / DSA</div>
+            </div>
+
+            <h2 class="section-title">Competencies</h2>
+
+            <div class="skill-grid">
+                <div>
+                    <small>DBMS</small>
+                    <div class="bar"><div class="fill" style="width:85%;"></div></div>
+                </div>
+                <div>
+                    <small>Networks</small>
+                    <div class="bar"><div class="fill" style="width:75%;"></div></div>
+                </div>
+                <div>
+                    <small>Team Mgmt</small>
+                    <div class="bar"><div class="fill" style="width:90%;"></div></div>
+                </div>
+                <div>
+                    <small>English</small>
+                    <div class="bar"><div class="fill" style="width:95%;"></div></div>
+                </div>
+            </div>
+
+            <button onclick="logout()" class="logout-btn">Logout</button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
