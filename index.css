@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #121212;
+    color: #333;
+}
+
+/* LOGIN PAGE */
+
+.login-container {
+    width: 350px;
+    margin: 150px auto;
+    background: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background: #000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background: #444;
+}
+
+#loginError {
+    color: red;
+    margin-top: 10px;
+}
+
+/* PORTFOLIO */
+
+.portfolio-container {
+    display: none;
+    width: 800px;
+    margin: 50px auto;
+    background: #f5f5f5;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+}
+
+.portfolio-container h1 {
+    text-align: center;
+}
+
+.subtitle {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.portfolio-container ul {
+    padding-left: 20px;
+}
+
+.logout-btn {
+    margin-top: 30px;
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    background: #444;
+}
